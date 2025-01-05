@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domain Quiz</title>
+    <link rel="stylesheet" href="domainspecificquiz.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h2>Select a Domain to Start Quiz</h2>
+        <select id="domain-select">
+            <option value="">Select a Domain</option>
+            <option value="webDevelopment">Web Development</option>
+            <option value="dataScience">Data Science</option>
+            <option value="ai">Artificial Intelligence</option>
+            <option value="cloudComputing">Cloud Computing</option>
+            <option value="mobileDevelopment">Mobile Development</option>
+            <option value="cyberSecurity">Cyber Security</option>
+            <option value="devOps">DevOps</option>
+        </select>
+        <button id="start-quiz">Start Quiz</button>
+        
+        <div id="quiz-container" style="display: none;">
+            <div id="question-container"></div>
+            <button id="submit-quiz" style="display: none;">Submit Quiz</button>
+            <div id="quiz-result" style="display: none;">
+                <p id="result-text"></p>
+                <button id="explore-courses" style="display: none;">Explore Courses to Improve Skills</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="domainspecificquiz.js"></script>
+</body>
+</html>

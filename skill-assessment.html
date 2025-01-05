@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skill Assessment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <h1>Skill Assessment</h1>
+    <p>Discover your strengths and unlock new career opportunities.</p>
+  </header>
+  
+  <main class="assessment-container">
+    <!-- Skill Quiz Section -->
+    <section class="section">
+      <h2 class="animated-heading">Interactive Skill Quiz</h2>
+      <p>Take a quick quiz to evaluate your current skill levels.</p>
+      <a href="domainspecificquiz.html">
+        <button class="btn btn-quiz">Start Quiz</button>
+      </a>
+     
+    </section>
+    
+    <!-- Resume Upload Section -->
+    <section class="section">
+      <h2 class="animated-heading">Upload Your Resume</h2>
+      <p>Upload your resume to analyze your skills and strengths.</p>
+      <input type="file" id="resume-upload" accept=".pdf, .docx">
+      <button class="btn btn-upload" id="analyze-resume">Analyze Resume</button>
+    </section>
+    
+    <!-- Feedback Section -->
+    <section class="feedback-section" id="feedback-section">
+      <h2 class="animated-heading">Results</h2>
+      <p id="feedback-text">Your feedback will appear here after completing the quiz or uploading your resume.</p>
+    </section>
+  </main>
+  
+  <script src="skillquiz.js"></script>
+</body>
+</html>

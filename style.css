@@ -1,0 +1,1436 @@
+/* styles.css
+
+/* General Styles */
+ body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+     padding: 0;
+  } 
+  
+  /* Header Styles */
+   .homepage-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 80px;
+  }
+  
+  .logo h1 {
+    margin: 0;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    font-weight: bold;
+  }
+  
+  .nav-links .btn {
+    background-color: white;
+    color: #4CAF50;
+    padding: 8px 15px;
+    border-radius: 5px;
+  } 
+   
+  /* Hero Section */
+   .hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://via.placeholder.com/1920x800') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding:95px;
+    overflow: auto;
+  }
+  
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin: 0 0 20px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin: 0 0 20px;
+  }
+  
+  .hero-content .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+   
+  /* Features Section */
+   .features {
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .features h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .features-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .feature-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+  }
+  
+  .feature-card h3 {
+    font-size: 1.5rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+  }
+  
+  .feature-card p {
+    font-size: 1rem;
+  }
+   
+  /* Footer */
+    .homepage-footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .homepage-footer p {
+    margin: 5px 0;
+  }
+  
+  .homepage-footer a {
+    color: #4CAF50;
+  }  
+
+
+
+
+  
+
+
+  
+  
+
+  
+ 
+
+
+
+
+
+  /*-------------------------ABOUT CSS----------------------------*/
+  /* About Section */
+.about-section {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9ec63;
+  }
+  .about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  .about-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .about-section ul {
+    list-style: disc;
+    margin: 20px auto;
+    padding-left: 40px;
+    text-align: left;
+    max-width: 800px;
+  }
+  .about-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  
+
+
+  /*-------------------------CONTACT CSS----------------------------*/
+ /* Contact Section */
+.contact-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .contact-section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #4CAF50;
+  }
+  
+  .contact-section p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  .btn {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    border: none;
+  }
+  
+  .btn:hover {
+    background-color: #45a049;
+  }
+  
+
+ /*-------------------------getstarted CSS----------------------------*/
+ /* Get Started Section */
+
+/* Get Started Section */
+.get-started-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;  /* Adjusted padding */
+    background: linear-gradient(135deg, #1f6f46, #4caf50); /* Gradient background */
+    height: auto; /* Allow the section to adjust based on content height */
+    color: white;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+    margin-top: 30px; /* Added top margin to create a gap under the header */
+  }
+  
+  /* Welcome Text */
+  .get-started-section h2 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInUp 1s ease-out; /* Fade-in animation */
+  }
+  
+  /* Subtext */
+  .get-started-section p {
+    font-size: 1.3rem;
+    margin-bottom: 40px;
+    max-width: 800px;
+    line-height: 1.6;
+    color: #eaeaea;
+    animation: fadeInUp 1s ease-out 0.5s; /* Fade-in animation with delay */
+  }
+  
+  /* Button Container */
+  .get-started-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    animation: fadeInUp 1s ease-out 1s; /* Fade-in animation with delay for buttons */
+  }
+  
+  /* Button Styles */
+  .get-started-buttons .btn {
+    background-color: #ffffff;
+    color: #4CAF50;
+    padding: 18px 30px;
+    border-radius: 50px; /* Rounded button edges */
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease; /* Transition for smooth hover effect */
+    width: 250px;
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .get-started-buttons .btn:hover {
+    background-color: #4CAF50;
+    color: #ffffff;
+    transform: translateY(-8px); /* Lift effect */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Keyframe Animations */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  /*-------------------------login CSS----------------------------*/
+  /* Reset and Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+ 
+  
+  /* Login Wrapper */
+  .login-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Login Card */
+  .login-card {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    width: 350px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Card Header */
+  .login-card h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #2e7d32; /* Dark green text */
+  }
+  
+  .login-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #4caf50;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+  
+  /* Login Button */
+  .btn-login {
+    width: 100%;
+    padding: 12px;
+    background-color: #4caf50;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-login:hover {
+    background-color: #388e3c;
+    transform: translateY(-3px); /* Hover lift effect */
+    box-shadow: 0 8px 15px rgba(76, 175, 80, 0.3);
+  }
+  
+  .btn-login:active {
+    transform: translateY(0);
+  }
+  
+  /* Extra Links */
+  .extra-links {
+    margin-top: 20px;
+  }
+  
+  .extra-links a {
+    color: #4caf50;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .extra-links a:hover {
+    color: #388e3c;
+  }
+  
+  /* Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+
+
+  /*-------------------------signup CSS----------------------------*/
+  /* Reset and Global Styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #81d4fa, #0288d1); 
+  color: #333;
+} */
+
+/* Signup Wrapper */
+.signup-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Signup Card */
+.signup-card {
+  background: #ffffff;
+  padding: 40px;
+  border-radius: 12px;
+  width: 400px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Card Header */
+.signup-card h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #0277bd; /* Dark blue text */
+}
+
+.signup-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 25px;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  border-color: #0288d1;
+  outline: none;
+  box-shadow: 0 0 5px rgba(2, 136, 209, 0.4);
+}
+
+/* Signup Button */
+.btn-signup {
+  width: 100%;
+  padding: 12px;
+  background-color: #0288d1;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-signup:hover {
+  background-color: #01579b;
+  transform: translateY(-3px); /* Hover lift effect */
+  box-shadow: 0 8px 15px rgba(2, 136, 209, 0.3);
+}
+
+.btn-signup:active {
+  transform: translateY(0);
+}
+
+/* Extra Links */
+.extra-links {
+  margin-top: 20px;
+}
+
+.extra-links a {
+  color: #0288d1;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.extra-links a:hover {
+  color: #01579b;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+/*-------------------------skill assessment CSS----------------------------*/
+
+header {
+  background: #ff8a65;
+  color: #fff;
+  padding: 20px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  margin: 0;
+  animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+  margin: 5px 0 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+  animation: fadeIn 3s ease-in-out;
+}
+
+/* Assessment Container */
+.assessment-container {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  animation: slideIn 1s ease-in-out;
+}
+
+/* Section Styling */
+.section {
+  margin-bottom: 30px;
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.animated-heading {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #ff7043;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #555;
+  animation: fadeInUp 2s ease-out;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 12px 20px;
+  background: #ff7043;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 5px 15px rgba(255, 112, 67, 0.4);
+  background: #ff5722;
+}
+
+.btn:active {
+  transform: scale(1);
+  box-shadow: none;
+}
+
+/* Input Field */
+input[type="file"] {
+  display: block;
+  margin: 10px auto;
+  padding: 8px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  width: 60%;
+}
+
+/* Feedback Section */
+.feedback-section {
+  display: none; /* Hidden by default */
+  padding-top: 20px;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  font-size: 1.6rem;
+  color: #ff7043;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.feedback-section p {
+  color: #333;
+  font-size: 1rem;
+  margin-top: 10px;
+  animation: fadeInUp 2.5s ease-out;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .animated-heading {
+    font-size: 1.5rem;
+  }
+  .btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
+
+
+/*-------------------------start your journey CSS----------------------------*/
+/* Global Styles */
+
+
+ .career-guidance-btn {
+  margin-top: 20px;
+  padding: 12px 24px;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+} 
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #f3e7e9, #e3eeff);
+  color: #333;
+  text-align: center;
+}
+/* Journey Section Styling */
+.journey-section {
+  padding: 50px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.journey-header {
+  margin-bottom: 40px;
+}
+
+.journey-header h1 {
+  font-size: 2.8rem;
+  color: #4a90e2;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.journey-header p {
+  font-size: 1.2rem;
+  color: #555;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Steps Container */
+.journey-steps {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+/* Individual Step Styling */
+.step {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  flex: 1;
+  text-align: center;
+  transition: transform 0.4s, box-shadow 0.4s;
+}
+
+.step:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Step Icon */
+.step-icon {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  color: #4a90e2;
+  animation: fadeIn 2s ease-in-out;
+}
+
+/* Step Headings */
+.step h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #333;
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Step Descriptions */
+.step p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+  color: #666;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+/* Buttons */
+.btn {
+  padding: 12px 20px;
+  background: #4a90e2;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  background: #357abf;
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .journey-steps {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+
+/*-------------------------skill-test  CSS----------------------------*/
+/* General Styles */
+body-st {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.selection-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 30px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.selection-container:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+  font-size: 2.4rem;
+  color: #4a90e2;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.selection-options,
+.other-skills {
+  margin-bottom: 25px;
+  text-align: left;
+  padding-left: 15px;
+}
+
+.selection-options label,
+.other-skills label {
+  font-size: 1.1rem;
+  color: #333;
+}
+
+#skill-category,
+#other-skill {
+  width: 100%;
+  padding: 12px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  margin-top: 8px;
+}
+
+#skill-category {
+  background-color: #f9f9f9;
+}
+
+.other-skills input {
+  background-color: #f9f9f9;
+}
+
+.btn {
+  padding: 12px 25px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn:hover {
+  background-color: #357abf;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .selection-container {
+    padding: 20px;
+  }
+}
+
+
+/*-------------------------explore courses  CSS----------------------------*/
+/* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f6f8;
+}
+
+.explore-container {
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #4a90e2;
+  margin-bottom: 15px;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 40px;
+  line-height: 1.6;
+}
+
+/* Courses Section */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.course-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-info {
+  padding: 20px;
+}
+
+.course-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.course-info p {
+  font-size: 1rem;
+  color: #777;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.course-info .btn {
+  padding: 10px 20px;
+  background-color: #4a90e2;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.course-info .btn:hover {
+  background-color: #357abf;
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .explore-container {
+    padding: 20px;
+  }
+}
+
+
+/*-------------------------view job oppotunities CSS----------------------------*/
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  padding: 20px;
+} */
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header h1 {
+  font-size: 2.8rem;
+  color: #333;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1.2rem;
+  color: #777;
+  margin-top: 10px;
+}
+
+/* Job Cards Section */
+.job-cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+  padding: 10px 0;
+}
+
+.job-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  overflow: hidden;
+  padding: 20px;
+  height: 350px;
+}
+
+.job-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #4a90e2;
+  padding: 15px;
+  border-radius: 6px;
+  color: white;
+  text-align: center;
+}
+
+.card-header h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.card-body {
+  margin-top: 20px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.card-body p {
+  margin: 8px 0;
+}
+
+.card-footer {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.card-footer .btn {
+  padding: 12px 24px;
+  background-color: #4a90e2;
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.card-footer .btn:hover {
+  background-color: #357abf;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  .job-cards-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card-footer .btn {
+    width: 100%;
+    padding: 15px;
+  }
+}
+
+  
+
+
+/* skill-quiz*/
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-header {
+  text-align: center;
+  padding: 20px;
+  background-color: #4caf50;
+  color: white;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.quiz-card {
+  text-align: center;
+}
+
+.question {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.option-btn {
+  padding: 10px;
+  font-size: 1rem;
+  color: white;
+  background-color: #4caf50;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.option-btn:hover {
+  background-color: #45a049;
+}
+
+.btn-next, .btn-restart {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-next:hover, .btn-restart:hover {
+  background-color: #0056b3;
+}
+
+.result-card {
+  text-align: center;
+}
+
+.result-card h2 {
+  color: #4caf50;
+}
+
+
+
+
+
+/*-------------------------ROADMAP-AI CSS----------------------------*/
+
+#roadmap-ai {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px;
+  background-color: #f9f9f9;
+  min-height: 90vh;
+  box-sizing: border-box;
+}
+
+
+#roadmap-ai .section-heading {
+  font-size: 2.5rem;
+  color: #4CAF50;
+  font-weight: bold;
+  margin: 0;
+  width: 100%;
+  text-align: left;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #4CAF50;
+  line-height: 1.2;
+  word-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin-top: 50px;
+}
+
+/* Decorative line or icon for heading */
+#roadmap-ai .section-heading::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #4CAF50;
+  margin-top: 10px;
+}
+
+
+/* Main content container within roadmap-ai */
+#roadmap-ai .main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 60%;
+  max-height: 80vh; /* Restrict the height to enable scrolling */
+  overflow-y: auto; /* Add vertical scrollbar if content overflows */
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Individual section cards within roadmap-ai */
+#roadmap-ai .section {
+  background-color: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+/* Styling for the short headings in the sections */
+#roadmap-ai .section-heading-short {
+  font-size: 1.5rem;
+  color: #58d45c;
+  margin-bottom: 10px;
+}
+
+/* Styling for paragraphs within roadmap-ai */
+#roadmap-ai .section p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Styling for buttons within roadmap-ai */
+#roadmap-ai .btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+}
+
+#roadmap-ai .btn:hover {
+  background-color: #45a049;
+}
+
+/* Responsive layout for roadmap-ai */
+@media (max-width: 768px) {
+  #roadmap-ai {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #roadmap-ai .section-heading {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  #roadmap-ai .main-content {
+    width: 100%;
+  }
+}

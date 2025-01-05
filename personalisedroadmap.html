@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <STYLE>
+      /* General Section Styling */
+ #roadmap-ai {
+  margin: 50px auto;
+  padding: 20px;
+  max-width: 90%;
+  background: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+} 
+
+/* Section Heading */
+#roadmap-ai .section-heading {
+  font-size: 2.5rem;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: left;
+  text-transform: capitalize;
+  padding-left: 10px;
+  border-left: 5px solid #4CAF50;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+} 
+
+/* Card Styling */
+ #roadmap-ai .card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  margin: 20px 0;
+} 
+
+/* Card Heading */
+ #roadmap-ai .card-heading {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  font-weight: bold;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #4CAF50;
+  padding-bottom: 5px;
+} 
+
+/* Roadmap Grid */
+ #roadmap-ai .roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+} 
+
+/* Roadmap Step */
+ #roadmap-ai .roadmap-step {
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#roadmap-ai .roadmap-step h3 {
+  font-size: 1.5rem;
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+#roadmap-ai .roadmap-step p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+} 
+
+/* Mobile Responsiveness */
+ @media (max-width: 768px) {
+  #roadmap-ai .section-heading {
+    font-size: 2rem;
+  }
+
+  #roadmap-ai .card-heading {
+    font-size: 1.5rem;
+  }
+
+  #roadmap-ai .roadmap-step h3 {
+    font-size: 1.2rem;
+  }
+
+  #roadmap-ai .roadmap-step p {
+    font-size: 0.9rem;
+  }
+} 
+
+
+
+
+/* Layout for Roadmap */
+.roadmap-layout {
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Input form takes 1/3 of space; roadmap steps take 2/3 */
+  gap: 20px;
+  align-items: start; /* Align content to the top */
+  margin-top: 20px;
+}
+
+/* Roadmap Container (Input Form) */
+.roadmap-container {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.roadmap-container h3 {
+  font-size: 1.8rem;
+  color: #4CAF50;
+  margin-bottom: 20px;
+}
+
+.roadmap-container label {
+  display: block;
+  font-size: 1rem;
+  color: #555;
+  margin: 10px 0 5px;
+}
+
+.roadmap-container input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.roadmap-container .btn {
+  display: block;
+  width: 100%;
+  background: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  text-align: center;
+  transition: background 0.3s;
+}
+
+.roadmap-container .btn:hover {
+  background: #45a049;
+}
+
+/* Roadmap Steps */
+.roadmap-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.roadmap-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .roadmap-layout {
+    grid-template-columns: 1fr; /* Stack form and roadmap */
+  }
+
+  .roadmap-container {
+    margin-bottom: 20px;
+  }
+}
+
+#roadmap-ai .roadmap-container{
+   text-align: left;
+  top:60px;
+  margin-top: 110px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+    </STYLE>
+</head>
+<body>
+      
+          
+    <section id="roadmap-ai">
+      <h2 class="section-heading">Your Path to Skill Mastery: Personalized Roadmap</h2>
+    
+      <div class="roadmap-layout">
+        <!-- Input Form -->
+        <div class="roadmap-container">
+          <h3>Get Your Personalized Roadmap</h3>
+          <form id="roadmap-form">
+            <label for="skills">Your Current Skills:</label>
+            <input type="text" id="skills" name="skills" placeholder="E.g., HTML, CSS, Python">
+    
+            <label for="goal">Your Career Goal:</label>
+            <input type="text" id="goal" name="goal" placeholder="E.g., Web Developer, Data Analyst">
+    
+            <label for="time">Time Available (hours/week):</label>
+            <input type="number" id="time" name="time" min="1" max="40">
+    
+            <button type="submit" class="btn">Generate Roadmap</button>
+          </form>
+        </div>
+    
+        <!-- Roadmap Steps -->
+        <div class="card roadmap-card">
+          <h2 class="card-heading">Your Skill Development Roadmap</h2>
+          <p>Follow a structured and personalized journey to achieve your goals:</p>
+          <div class="roadmap-grid">
+            <div class="roadmap-step">
+              <h3>Step 1: Assess Your Skills</h3>
+              <p>Start by analyzing your current skillset to identify strengths and improvement areas.</p>
+            </div>
+            <div class="roadmap-step">
+              <h3>Step 2: Set Your Goals</h3>
+              <p>Define your career aspirations and choose the skills you want to develop to achieve them.</p>
+            </div>
+            <div class="roadmap-step">
+              <h3>Step 3: Personalized Learning</h3>
+              <p>Receive AI-driven course recommendations tailored to your goals and skill gaps.</p>
+            </div>
+            <div class="roadmap-step">
+              <h3>Step 4: Track Your Progress</h3>
+              <p>Monitor your learning journey and achievements with our progress tracking tools.</p>
+            </div>
+            <div class="roadmap-step">
+              <h3>Step 5: Achieve Your Goals</h3>
+              <p>Apply your skills in real-world scenarios, and get job recommendations or career advice.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+  
+
+</body>
+</html>
